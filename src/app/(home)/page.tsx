@@ -32,6 +32,37 @@ export default function HomePage() {
       <SignedIn>
         <ProjectsList />
       </SignedIn>
+      {/* Features Section */}
+<section className="py-20 px-4 max-w-6xl mx-auto">
+  <div className="text-center mb-16">
+    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-gray-900">
+      Build web apps at the speed of thought
+    </h2>
+    <p className="mt-4 text-lg text-gray-600">
+      Everything you need to turn your ideas into fully functional production apps.
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
+      <div className="h-10 w-10 bg-orange-100 rounded-lg flex items-center justify-center text-orange-600 font-bold mb-4">⚡</div>
+      <h3 className="text-xl font-semibold text-gray-900 mb-2">Instant Generation</h3>
+      <p className="text-gray-600">Type what you want to build in plain English, and watch the AI generate the components and layout immediately.</p>
+    </div>
+
+    <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
+      <div className="h-10 w-10 bg-orange-100 rounded-lg flex items-center justify-center text-orange-600 font-bold mb-4">👁️</div>
+      <h3 className="text-xl font-semibold text-gray-900 mb-2">Live Preview</h3>
+      <p className="text-gray-600">See your UI update and preview your application in real-time as you chat and refine instructions.</p>
+    </div>
+
+    <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
+      <div className="h-10 w-10 bg-orange-100 rounded-lg flex items-center justify-center text-orange-600 font-bold mb-4">🚀</div>
+      <h3 className="text-xl font-semibold text-gray-900 mb-2">Production Ready</h3>
+      <p className="text-gray-600">Built on modern tech stacks like Next.js and Tailwind, ready to scale and deploy effortlessly.</p>
+    </div>
+  </div>
+</section>
     </div>
   );
 }
