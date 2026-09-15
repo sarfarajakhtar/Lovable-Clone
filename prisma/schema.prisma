@@ -64,6 +64,6 @@ model Fragment {
 
 model Usage {
   key String @id
-  points Int
+  points Int @default(50)
   expire DateTime?
 }
