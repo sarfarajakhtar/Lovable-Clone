@@ -129,6 +129,75 @@ export default function HomePage() {
     </div>
   </div>
 </section>
+      {/* Pricing Section */}
+<section className="py-20 px-4 max-w-6xl mx-auto border-t border-gray-100">
+  <div className="text-center mb-16">
+    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-gray-900">
+      Simple, transparent pricing
+    </h2>
+    <p className="mt-4 text-lg text-gray-600">
+      Choose the plan that fits your creation speed. Upgrade or cancel anytime.
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm flex flex-col">
+      <h3 className="text-xl font-semibold text-gray-900 mb-2">Starter</h3>
+      <p className="text-gray-600 mb-6 text-sm">Perfect for trying out ideas and quick prototypes.</p>
+      <div className="mb-6">
+        <span className="text-4xl font-bold text-gray-900">$0</span>
+        <span className="text-gray-500 ml-2">/ month</span>
+      </div>
+      <ul className="space-y-3 text-sm text-gray-700 mb-8 flex-1">
+        <li className="flex items-center">✓ 3 Free Generations</li>
+        <li className="flex items-center">✓ Basic UI Components</li>
+        <li className="flex items-center">✓ Community Support</li>
+      </ul>
+      <a href="/sign-in" className="w-full py-3 px-4 text-center bg-gray-100 hover:bg-gray-200 text-gray-900 font-medium rounded-xl transition">
+        Get Started Free
+      </a>
+    </div>
+
+    <div className="bg-white p-8 rounded-2xl border-2 border-orange-500 shadow-md flex flex-col relative">
+      <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-orange-500 text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
+        Most Popular
+      </div>
+      <h3 className="text-xl font-semibold text-gray-900 mb-2">Pro Creator</h3>
+      <p className="text-gray-600 mb-6 text-sm">For builders launching real SaaS apps and MVPs.</p>
+      <div className="mb-6">
+        <span className="text-4xl font-bold text-gray-900">$29</span>
+        <span className="text-gray-500 ml-2">/ month</span>
+      </div>
+      <ul className="space-y-3 text-sm text-gray-700 mb-8 flex-1">
+        <li className="flex items-center">✓ Unlimited AI Generations</li>
+        <li className="flex items-center">✓ Full Code Export & Ownership</li>
+        <li className="flex items-center">✓ Clerk Auth & Database Integration</li>
+        <li className="flex items-center">✓ Priority Support</li>
+      </ul>
+      <a href="/sign-in" className="w-full py-3 px-4 text-center bg-orange-600 hover:bg-orange-700 text-white font-medium rounded-xl transition">
+        Upgrade to Pro
+      </a>
+    </div>
+
+    <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm flex flex-col">
+      <h3 className="text-xl font-semibold text-gray-900 mb-2">Agency</h3>
+      <p className="text-gray-600 mb-6 text-sm">For teams and agencies building client projects fast.</p>
+      <div className="mb-6">
+        <span className="text-4xl font-bold text-gray-900">$99</span>
+        <span className="text-gray-500 ml-2">/ month</span>
+      </div>
+      <ul className="space-y-3 text-sm text-gray-700 mb-8 flex-1">
+        <li className="flex items-center">✓ Everything in Pro</li>
+        <li className="flex items-center">✓ Multi-seat Team Collaboration</li>
+        <li className="flex items-center">✓ Custom Domain Support</li>
+        <li className="flex items-center">✓ Dedicated Account Manager</li>
+      </ul>
+      <a href="/sign-in" className="w-full py-3 px-4 text-center bg-gray-100 hover:bg-gray-200 text-gray-900 font-medium rounded-xl transition">
+        Contact Agency Sales
+      </a>
+    </div>
+  </div>
+</section>
     </div>
   );
 }
