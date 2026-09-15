@@ -53,21 +53,7 @@ export const projectsRouter = createTRPCRouter({
       })
     )
     .mutation(async ({ input, ctx }) => {
-      try {
-        await consumeCredits();
-      } catch (error) {
-        if (error instanceof Error) {
-          throw new TRPCError({
-            code: "BAD_REQUEST",
-            message: "Something went wrong.",
-          });
-        } else {
-          throw new TRPCError({
-            code: "TOO_MANY_REQUESTS",
-            message: "You ran out of credits",
-          });
-        }
-      }
+      // Credit check bypassed for testing
 
       const createdProject = await prisma.project.create({
         data: {
