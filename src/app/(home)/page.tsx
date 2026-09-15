@@ -63,6 +63,39 @@ export default function HomePage() {
     </div>
   </div>
 </section>
+      {/* Solutions Section */}
+<section className="py-20 px-4 max-w-6xl mx-auto border-t border-gray-100">
+  <div className="text-center mb-16">
+    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-gray-900">
+      Engineered for every creator
+    </h2>
+    <p className="mt-4 text-lg text-gray-600">
+      Whether you are spinning up a quick prototype or launching a full SaaS product.
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div className="bg-gradient-to-br from-orange-50 to-white p-8 rounded-2xl border border-orange-100">
+      <h3 className="text-2xl font-semibold text-gray-900 mb-3">For Entrepreneurs & Founders</h3>
+      <p className="text-gray-600 mb-6">Validate business ideas in hours instead of weeks. Build functional MVPs, test them with real users, and pivot fast without heavy upfront engineering costs.</p>
+      <ul className="space-y-2 text-sm text-gray-700">
+        <li className="flex items-center">✓ Rapid prototype creation</li>
+        <li className="flex items-center">✓ Built-in authentication & database</li>
+        <li className="flex items-center">✓ Instant deployment on Vercel</li>
+      </ul>
+    </div>
+
+    <div className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl border border-gray-200">
+      <h3 className="text-2xl font-semibold text-gray-900 mb-3">For Developers & Agencies</h3>
+      <p className="text-gray-600 mb-6">Accelerate client delivery and skip boilerplate setup. Generate production-ready Next.js code that you can easily customize and extend.</p>
+      <ul className="space-y-2 text-sm text-gray-700">
+        <li className="flex items-center">✓ Clean, readable Tailwind code</li>
+        <li className="flex items-center">✓ Modern React component structure</li>
+        <li className="flex items-center">✓ Full code ownership and export</li>
+      </ul>
+    </div>
+  </div>
+</section>
     </div>
   );
 }
