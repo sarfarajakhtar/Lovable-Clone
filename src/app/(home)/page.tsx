@@ -96,6 +96,39 @@ export default function HomePage() {
     </div>
   </div>
 </section>
+      {/* FAQ Section */}
+<section className="py-20 px-4 max-w-4xl mx-auto border-t border-gray-100">
+  <div className="text-center mb-16">
+    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-gray-900">
+      Frequently asked questions
+    </h2>
+    <p className="mt-4 text-lg text-gray-600">
+      Got questions? We've got answers.
+    </p>
+  </div>
+
+  <div className="space-y-6">
+    <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
+      <h3 className="text-lg font-semibold text-gray-900 mb-2">What can I build with this platform?</h3>
+      <p className="text-gray-600">You can build fully functional web applications, SaaS MVPs, internal tools, and dashboards simply by chatting with the AI and refining your layout.</p>
+    </div>
+
+    <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
+      <h3 className="text-lg font-semibold text-gray-900 mb-2">Who owns the generated code?</h3>
+      <p className="text-gray-600">You do! Every line of code generated belongs entirely to you. You have full ownership and can export, modify, or deploy it anywhere you like.</p>
+    </div>
+
+    <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
+      <h3 className="text-lg font-semibold text-gray-900 mb-2">How is authentication handled?</h3>
+      <p className="text-gray-600">Authentication is seamlessly integrated out of the box using Clerk, giving you secure user sign-ups, logins, and profile management instantly.</p>
+    </div>
+
+    <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
+      <h3 className="text-lg font-semibold text-gray-900 mb-2">Can I deploy my app to production?</h3>
+      <p className="text-gray-600">Yes! The project is optimized for modern hosting platforms like Vercel, allowing you to deploy live with just a few clicks.</p>
+    </div>
+  </div>
+</section>
     </div>
   );
 }
