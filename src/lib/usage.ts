@@ -10,6 +10,10 @@ const GENERATION_COST = 1;
 
 export async function getUsageTracker() {
   return {
+    remainingPoints: 500,
+    msBeforeNext: 0,
+    consumedPoints: 0,
+    isExceeded: false,
     consume: async () => ({ remainingPoints: 500, msBeforeNext: 0, consumedPoints: 0, isExceeded: false }),
     get: async () => ({ remainingPoints: 500, msBeforeNext: 0, consumedPoints: 0, isExceeded: false }),
   } as any;
